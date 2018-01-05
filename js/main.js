@@ -1,4 +1,4 @@
-function myFunction() {
+function dropdownClick() {
     var x = document.getElementById("mynav");
     if (x.className === "nav") {
         x.className += " responsive";
