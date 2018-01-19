@@ -11,6 +11,10 @@
 	<link rel="manifest" href="manifest.json">
 	<link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
 	<meta name="theme-color" content="#e8e8e8">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/main.css">
+	
+	<link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
 
     <style>
 
@@ -20,7 +24,7 @@
         }
 
         html {
-            color: #888;
+            color: white;
             display: table;
             font-family: sans-serif;
             height: 100%;
@@ -35,7 +39,7 @@
         }
 
         h1 {
-            color: #555;
+            color: white;
             font-size: 2em;
             font-weight: 400;
         }
@@ -61,8 +65,44 @@
     </style>
 </head>
 <body>
+	<div class="navigation-bar">
+		<ul class="nav" id="mynav"> <!--class acting like flag-->
+			<li><a href="index.html">Home</a></li>
+			<li><a href="about.html">About</a></li>
+			<li><a href="speaking.html">Speaking</a></li>
+			<li><a href="writing.html">Writing</a></li>
+			<li><a href="photography.html">Photography</a></li>
+			<li><a href="contact.html">Contact</a></li>
+			<li><a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="dropdownClick()">&#9776;</a></li>
+		</ul>
+		
+		<div class="social">
+			<a href="https://www.linkedin.com/in/jimmyqi/"><img src="img/linkedin.png" 
+				title="LinkedIn" alt="LinkedIn" width="25" height="25"></a>
+				
+			<a href="https://www.instagram.com/jimmyqiji/"><img title="Instagram" 
+				alt="Instagram" src="img/instagram.png" width="25" height="25"></a>
+				
+			<a href="https://github.com/jimmyqiji"><img title="Github" 
+				alt="Github" src="img/github.png" width="25" height="25"></a>
+				
+			<a href="mailto:j35qi@edu.uwaterloo.ca"><img title="Email" 
+				alt="Email" src="img/email.png" width="25" height="25"></a>
+		</div>
+	</div>
+	
+	<div class="bg">
+		<img src="img/bgc.jpg">
+	</div>
+	
     <h1>Page Not Found</h1>
     <p>You probably shouldn't be here, unless you're Jimmy Qi. In which case, long live my creator</p>
+	
+	<!-- Google Analytics -->
+        <script>
+            window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
+            ga('create','UA-112789736-1','auto');ga('send','pageview')
+        </script>
 </body>
 </html>
 

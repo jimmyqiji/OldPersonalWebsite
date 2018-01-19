@@ -156,7 +156,7 @@ body {
 }
 
 /* Change the link color to dark green on hover */
-li a:hover:not(.active) {
+.nav li a:hover:not(.active) {
 	background-color: #B39EE8;
 	border-radius=3;
 }
@@ -231,6 +231,7 @@ body .bg img{
 	top: 0;
 	left: 0;
 
+	z-index: -1;
 /*
 	top: 50%;
 	left: 50%;
@@ -327,6 +328,10 @@ body .bg img{
 	top: 20%;
 }
 
+.resumes a{
+	color: #D2C4F7;
+}
+
 /*WRITING PAGE*/
 
 #writing {
@@ -411,26 +416,6 @@ body .bg img{
 
 @media screen and (max-width: 768px) {
 	
-	.nav a:not(:first-child) {display: none;}
-	
-	.nav a.icon {
-    float: right;
-    display: block;
-	}
-	
-	.nav.responsive {position: relative;}
-	
-    .nav.responsive .icon {
-		position: absolute;
-		right: 0;
-		top: 0;
-    }
-	
-    .nav.responsive a {
-		float: none;
-		display: block;
-		text-align: left;
-    }
 	
 }
 /* ==========================================================================
@@ -523,8 +508,28 @@ body .bg img{
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
+@media only screen and (max-width: 768px) {
+	
+	.nav li:not(:first-child) {display: none;}
+	
+	.nav li.icon {
+    float: right;
+    display: block;
+	}
+	
+	.nav.responsive {position: relative;}
+	
+    .nav.responsive .icon {
+		position: absolute;
+		right: 0;
+		top: 0;
+    }
+	
+    .nav.responsive a {
+		float: none;
+		display: block;
+		text-align: left;
+    }
 }
 
 @media print,
