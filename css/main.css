@@ -314,9 +314,10 @@ body .bg img{
 	width: 30%;
 	height: auto;
 	
-	position: absolute;
+	position: fixed;
 	top: 50%;
 	left: 15%;
+	
 	
 	transform: translate(0, -50%);
 }
@@ -325,7 +326,10 @@ body .bg img{
 	color: white;
 	position: absolute;
 	left: 50%;
-	top: 20%;
+	top: 10%;
+	right: 15%;
+	
+	text-indent: 4em;
 }
 
 .resumes a{
