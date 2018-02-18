@@ -398,24 +398,6 @@ body .bg img{
 	text-align: center;
 }
 
-/*SPEAKING PAGE*/
-
-#speaking {
-	position: absolute;
-	left: 15%;
-	top: 15%;
-	width: 70%;
-}
-
-#speaking video {
-
-	height: auto;
-	margin: 0 auto;
-}
-
-#speaking .description {
-	margin-bottom: 1em;
-}
 
 
 @media screen and (max-width: 768px) {
